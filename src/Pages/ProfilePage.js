@@ -1,15 +1,10 @@
 import React, { useEffect, useState } from "react";
-// import profileImg from "../pic/Profile-pic.png";
 
 import { Col, Container, Row, Button, Table, Spinner } from "react-bootstrap";
 import "./ProfilePage.css";
 import { Link } from "react-router-dom";
-// import useAuth from "../../hooks/useAuth";
 
 const ProfilePage = () => {
-  //   const [setDoctors] = useState([]);
-  //   const { user } = useAuth();
-
   const [allData, setAllData] = useState({});
 
   useEffect(() => {

@@ -75,7 +75,6 @@ const EditProfile = () => {
     formData.append("github", data.github);
 
     fetch(`https://young-cove-58328.herokuapp.com/edit/${allData._id}`, {
-      // fetch(`http://localhost:5000/edit`, {
       method: "PUT",
       body: formData,
     })
@@ -91,10 +90,6 @@ const EditProfile = () => {
   };
   const disableToggle = (value) => {
     document.getElementById("endingDate").disabled = value;
-
-    // else {
-    //   setTodate();
-    // }
     setToggleValue(value);
   };
 
@@ -106,7 +101,7 @@ const EditProfile = () => {
             Logout
           </Button>
           <Link to="/">
-            <Button variant="outline-light" className="common-btn">
+            <Button variant="outline-light" className="common-btn me-auto">
               View Profile
             </Button>
           </Link>
