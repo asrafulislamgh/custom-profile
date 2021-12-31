@@ -74,7 +74,7 @@ const EditProfile = () => {
     formData.append("toDate", data.toDate);
     formData.append("github", data.github);
 
-    fetch(`http://localhost:5000/edit/${allData._id}`, {
+    fetch(`https://young-cove-58328.herokuapp.com/edit/${allData._id}`, {
       // fetch(`http://localhost:5000/edit`, {
       method: "PUT",
       body: formData,
