@@ -8,7 +8,7 @@ const ProfilePage = () => {
   const [allData, setAllData] = useState({});
 
   useEffect(() => {
-    fetch("http://localhost:5000/edit")
+    fetch("https://young-cove-58328.herokuapp.com/edit")
       .then((res) => res.json())
       .then((data) => {
         setAllData(data[0]);
